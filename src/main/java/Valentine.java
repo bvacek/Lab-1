@@ -32,7 +32,7 @@ public class Valentine {
         /*
          * ...and then out to the left.
          */
-        for (double heartXPosition = -1; heartXPosition > -1000; heartXPosition *= 1.1) {
+        for (double heartXPosition = 1; heartXPosition < 1000; heartXPosition *= 1.1) {
             Zen.drawImage(heartFile.getAbsolutePath(), (int) heartXPosition, 0);
             Zen.sleep(33);
         }
@@ -61,7 +61,7 @@ public class Valentine {
             String myMessagePrefix = "";
             for (int i = 0; i < myMessage.length(); i++) {
                 myMessagePrefix += myMessage.charAt(i);
-                Zen.drawText(myMessagePrefix, 0, 100);
+                Zen.drawText(myMessagePrefix, 100, 100);
                 Zen.sleep(100);
             }
         }

@@ -22,7 +22,7 @@ public class Paint {
          *
          * Note that the default starting color for our Zen window is white.
          */
-        Zen.create(320, 200, "stretch");
+        Zen.create(640, 400, "stretch");
 
         while (Zen.isRunning()) {
 
@@ -45,6 +45,7 @@ public class Paint {
                 double y2 = y - 25 + 50 * Math.random();
 
                 Zen.fillRect((int) x2, (int) y2, 1, 1);
+                Zen.sleep(50);
             }
         }
     }

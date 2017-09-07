@@ -19,7 +19,7 @@ public class BouncingBall {
          * Location and current speed of our bouncing ball.
          */
         double x = 0, y = 0;
-        double velocityX = 1, velocityY = 0;
+        double velocityX = .5, velocityY = 0;
 
         while (Zen.isRunning()) {
             /*

@@ -32,13 +32,13 @@ public class OnceUponAWhile {
          *
          * @see https://en.wikipedia.org/wiki/RGB_color_model
          */
-        Zen.setColor(255, 0, 0);
+        Zen.setColor(255, 150, 0);
         Zen.drawText("Upon", 0, 200);
 
         /*
          * More text in a different color.
          */
-        Zen.setColor(0, 0, 128);
+        Zen.setColor(100, 0, 128);
         Zen.drawText("A Time (please click)", 0, 300);
 
         /*
@@ -53,7 +53,7 @@ public class OnceUponAWhile {
         while (shadeColor > 0) {
             Zen.setColor(shadeColor, shadeColor, shadeColor);
             Zen.fillRect(0, 0, Zen.getZenWidth(), Zen.getZenHeight());
-            Zen.sleep(1);
+            Zen.sleep(100);
             shadeColor = shadeColor - 1;
         }
 
